@@ -1,0 +1,232 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Calculator.MainPage"
+             BackgroundColor="Black">
+
+    <ScrollView>
+        <Grid RowSpacing="6" ColumnSpacing="6">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <!-- First row -->
+            <Label x:Name="Result" 
+               Grid.ColumnSpan="4"
+               Grid.Row="0"
+               Text="Placeholder"
+               HorizontalTextAlignment="End"
+               VerticalTextAlignment="End"
+               FontSize="32"
+               Margin="10"
+               TextColor="White"/>
+            <!-- Second row -->
+            <Button x:Name="ClearBtn"
+                Grid.Column="0"
+                Grid.Row="1"
+                BackgroundColor="DarkGrey"
+                TextColor="Black"
+                Text="AC"
+                CornerRadius="50"
+                FontSize="40"
+                Margin="5"/>
+            <Button
+                x:Name="InvertBtn"
+                Grid.Column="1"
+                Grid.Row="1"
+                BackgroundColor="DarkGrey"
+                TextColor="Black"
+                Text="+/-"
+                CornerRadius="50"
+                FontSize="40"
+                Margin="5"/>
+            <Button
+                x:Name="PercentBtn"
+                Grid.Column="2"
+                Grid.Row="1"
+                BackgroundColor="DarkGrey"
+                TextColor="Black"
+                Text="%"
+                CornerRadius="50"
+                FontSize="40"
+                Margin="5"/>
+            <Button
+                x:Name="DivideBtn"
+                Grid.Column="3"
+                Grid.Row="1"
+                BackgroundColor="Orange"
+                TextColor="White"
+                Text="÷"
+                CornerRadius="50"
+                FontSize="40"
+                Margin="5"/>
+            <!-- Third row -->
+            <Button
+                x:Name="SevenBtn"
+                Grid.Column="0"
+                Grid.Row="2"
+                BackgroundColor="#181818"
+                TextColor="White"
+                Text="7"
+                CornerRadius="50"
+                FontSize="40"
+                Margin="5"/>
+            <Button
+                x:Name="EightBtn"
+                Grid.Column="1"
+                Grid.Row="2"
+                BackgroundColor="#181818"
+                TextColor="White"
+                Text="8"
+                CornerRadius="50"
+                FontSize="40"
+                Margin="5"/>
+            <Button
+                x:Name="NineBtn"
+                Grid.Column="2"
+                Grid.Row="2"
+                BackgroundColor="#181818"
+                TextColor="White"
+                Text="9"
+                CornerRadius="50"
+                FontSize="40"
+                Margin="5"/>
+            <Button
+                x:Name="MultBtn"
+                Grid.Column="3"
+                Grid.Row="2"
+                BackgroundColor="Orange"
+                TextColor="White"
+                Text="X"
+                CornerRadius="50"
+                FontSize="40"
+                Margin="5"/>
+            <!-- Fourth row -->
+            <Button
+                x:Name="FourBtn"
+                Grid.Column="0"
+                Grid.Row="3"
+                BackgroundColor="#181818"
+                TextColor="White"
+                Text="4"
+                CornerRadius="50"
+                FontSize="40"
+                Margin="5"/>
+            <Button 
+                x:Name="FiveBtn"
+                Grid.Column="1"
+                Grid.Row="3"
+                BackgroundColor="#181818"
+                TextColor="White"
+                Text="5"
+                CornerRadius="50"
+                FontSize="40"
+                Margin="5"/>
+            <Button 
+                x:Name="SixBtn"
+                Grid.Column="2"
+                Grid.Row="3"
+                BackgroundColor="#181818"
+                TextColor="White"
+                Text="6"
+                CornerRadius="50"
+                FontSize="40"
+                Margin="5"/>
+            <Button
+                x:Name="MinusBtn"
+                Grid.Column="3"
+                Grid.Row="3"
+                BackgroundColor="Orange"
+                TextColor="White"
+                Text="-"
+                CornerRadius="50"
+                FontSize="40"
+                Margin="5"/>
+            <!-- Fifth row -->
+            <Button
+                x:Name="OneBtn"
+                Grid.Column="0"
+                Grid.Row="4"
+                BackgroundColor="#181818"
+                TextColor="White"
+                Text="1"
+                CornerRadius="50"
+                FontSize="40"
+                Margin="5"/>
+            <Button 
+                x:Name="TwoBtn"
+                Grid.Column="1"
+                Grid.Row="4"
+                BackgroundColor="#181818"
+                TextColor="White"
+                Text="2"
+                CornerRadius="50"
+                FontSize="40"
+                Margin="5"/>
+            <Button 
+                x:Name="ThreeBtn"
+                Grid.Column="2"
+                Grid.Row="4"
+                BackgroundColor="#181818"
+                TextColor="White"
+                Text="3"
+                CornerRadius="50"
+                FontSize="40"
+                Margin="5"/>
+            <Button
+                x:Name="PlusBtn"
+                Grid.Column="3"
+                Grid.Row="4"
+                BackgroundColor="Orange"
+                TextColor="White"
+                Text="+"
+                CornerRadius="50"
+                FontSize="40"
+                Margin="5"/>
+            <!-- Sixth row -->
+            <Button 
+                x:Name="ZeroBtn"
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                Grid.Row="5"
+                BackgroundColor="#181818"
+                TextColor="White"
+                Text="0"
+                CornerRadius="50"
+                FontSize="40"
+                Margin="5"/>
+            <Button 
+                x:Name="PointBtn"
+                Grid.Column="2"
+                Grid.Row="5"
+                BackgroundColor="#181818"
+                TextColor="White"
+                Text="."
+                CornerRadius="50"
+                FontSize="40"
+                Margin="5"/>
+            <Button
+                x:Name="EqualBtn"
+                Grid.Column="3"
+                Grid.Row="5"
+                BackgroundColor="Orange"
+                TextColor="White"
+                Text="="
+                CornerRadius="50"
+                FontSize="40"
+                Margin="5"/>
+        </Grid>
+    </ScrollView>
+
+
+</ContentPage>

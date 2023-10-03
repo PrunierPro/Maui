@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:MauiExo1"
+             x:Class="MauiExo1.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Label
+                Text="In this game, you have to guess the magic number between 1 and 20."
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="32"
+                HorizontalOptions="Center">
+                <Label.TextColor>Aqua</Label.TextColor>
+                <Label.FontAttributes>Bold</Label.FontAttributes>
+            </Label>
+
+            <Entry
+                Placeholder="Enter a number between 1 and 20"
+                Completed="Guess"
+                Keyboard="Numeric"
+                ClearButtonVisibility="WhileEditing"
+                MaxLength="2"
+                MaximumWidthRequest="400" Rotation="0"/>
+
+            <Label x:Name="MessageLabel"
+                   SemanticProperties.HeadingLevel="Level3"
+                    FontSize="32"
+                    HorizontalOptions="Center"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

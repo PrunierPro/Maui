@@ -4,7 +4,9 @@ VisualStudioVersion = 17.0.31611.283
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MauiExo1", "MauiExo1\MauiExo1.csproj", "{8FFD3374-E0E7-4F56-AB56-7BC740D70E8F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculator", "Calculator\Calculator.csproj", "{77578F15-BFFB-4FAD-8544-26B3AE68A40E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Calculator", "Calculator\Calculator.csproj", "{77578F15-BFFB-4FAD-8544-26B3AE68A40E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quiz App", "Quiz App\Quiz App.csproj", "{70E3B8E5-9380-4F4D-A11D-86511A14D5C0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,6 +26,12 @@ Global
 		{77578F15-BFFB-4FAD-8544-26B3AE68A40E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{77578F15-BFFB-4FAD-8544-26B3AE68A40E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{77578F15-BFFB-4FAD-8544-26B3AE68A40E}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{70E3B8E5-9380-4F4D-A11D-86511A14D5C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70E3B8E5-9380-4F4D-A11D-86511A14D5C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70E3B8E5-9380-4F4D-A11D-86511A14D5C0}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{70E3B8E5-9380-4F4D-A11D-86511A14D5C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70E3B8E5-9380-4F4D-A11D-86511A14D5C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70E3B8E5-9380-4F4D-A11D-86511A14D5C0}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

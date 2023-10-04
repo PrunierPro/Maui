@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Quiz_App.Views.QuizPage"
+             Title="QuizPage">
+    <VerticalStackLayout>
+        <Label x:Name="QuestionNum" TextColor="Yellow"/>
+        <Label x:Name="Prompt" HorizontalTextAlignment="Center"/>
+        <Entry x:Name="AnswerEntry"
+               Completed="OnEntryAnswer"
+               IsVisible="false"/>
+        <Button x:Name="OptionOne"
+                Clicked="OnBtnAnswer"
+                IsVisible="False"/>
+        <Button x:Name="OptionTwo"
+                Clicked="OnBtnAnswer"
+                IsVisible="False"/>
+        <Button x:Name="OptionThree"
+                Clicked="OnBtnAnswer"
+                IsVisible="False"/>
+        <Button x:Name="OptionFour"
+                Clicked="OnBtnAnswer"
+                IsVisible="False"/>
+        <Label x:Name="NerdLabel" HorizontalTextAlignment="Center" Text="vvvvv This is you vvvvv" IsVisible="False"/>
+        <Image x:Name="NerdImg" Source="nerd.png" IsVisible="False" HeightRequest="150"/>
+        <Label x:Name="WinLabel" TextColor="Green" Text="You win!!!!!" IsVisible="False" FontSize="32" HorizontalTextAlignment="Center"/>
+        <Button x:Name="ReturnBtn" Clicked="OnReturnClicked" IsVisible="False" Text="Return to start"/>
+    </VerticalStackLayout>
+</ContentPage>
